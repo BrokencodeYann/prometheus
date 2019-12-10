@@ -4,7 +4,7 @@ timer.Create("PrometheusErrorRepeater", 20, 0, function()
 		MsgC(Color(255,0,0), "\n[Prometheus repeated error of " .. Date .. "] " .. j.Text .. "\n")
 	end
 end)
-
+--Author YannBlkDz
 function Prometheus.RemoveRepeat(ID)
 	for n, j in pairs(Prometheus.RepeatingErrors) do
 		if j.ID == ID then
